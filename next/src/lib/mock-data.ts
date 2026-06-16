@@ -1,0 +1,126 @@
+import { Job } from "@/app/utils/consts";
+
+export const mockJobs: Job[] = [
+  {
+    id: "1",
+    title: "Junior Web Developer Intern",
+    location: "Seattle, WA",
+    experience: "Entry-level",
+    grade: "11th",
+    employment: "Internship",
+    site: "Hybrid",
+    isActive: true,
+    description:
+      "Build and maintain web applications using React and TypeScript. Work alongside senior engineers to ship features for our customer-facing product.",
+    companyOverview: "TechStart is a Seattle-based startup building tools for small businesses.",
+    salary: 20,
+    employer: { id: "101", username: "techstart_hiring", bio: "Seattle startup hiring high schoolers passionate about tech." },
+  },
+  {
+    id: "2",
+    title: "Marketing Volunteer",
+    location: "Bellevue, WA",
+    experience: "None",
+    grade: "9th",
+    employment: "Volunteer",
+    site: "Remote",
+    isActive: true,
+    description:
+      "Help create social media content, write blog posts, and assist with email campaigns. Great for students interested in digital marketing.",
+    companyOverview: "GreenRoots is a non-profit focused on environmental education.",
+    salary: 0,
+    employer: { id: "102", username: "greenroots_org", bio: "Non-profit looking for motivated student volunteers." },
+  },
+  {
+    id: "3",
+    title: "Data Entry & Research Assistant",
+    location: "Redmond, WA",
+    experience: "Entry-level",
+    grade: "10th",
+    employment: "Part-time",
+    site: "On-site",
+    isActive: true,
+    description:
+      "Assist the research team with data collection, spreadsheet management, and literature reviews. Flexible hours around the school schedule.",
+    companyOverview: "ResearchBridge connects high school students with real research opportunities.",
+    salary: 17,
+    employer: { id: "103", username: "researchbridge", bio: "Connecting students with hands-on research experience." },
+  },
+  {
+    id: "4",
+    title: "Graphic Design Intern",
+    location: "Kirkland, WA",
+    experience: "Entry-level",
+    grade: "11th",
+    employment: "Internship",
+    site: "Remote",
+    isActive: true,
+    description:
+      "Create visual assets for social media, presentations, and marketing materials using Figma and Adobe Creative Suite.",
+    companyOverview: "BrandCanvas is a boutique creative agency serving local businesses.",
+    salary: 18,
+    employer: { id: "104", username: "brandcanvas_studio", bio: "Creative agency that loves mentoring young designers." },
+  },
+  {
+    id: "5",
+    title: "Youth STEM Tutor",
+    location: "Renton, WA",
+    experience: "1-2 years",
+    grade: "12th",
+    employment: "Part-time",
+    site: "On-site",
+    isActive: true,
+    description:
+      "Tutor middle school students in math, science, and coding after school. Must have strong communication skills and patience.",
+    companyOverview: "NextGen Tutors is a community learning center in the greater Seattle area.",
+    salary: 19,
+    employer: { id: "105", username: "nextgen_tutors", bio: "Community tutoring center empowering the next generation." },
+  },
+  {
+    id: "6",
+    title: "IT Support Volunteer",
+    location: "Tacoma, WA",
+    experience: "None",
+    grade: "10th",
+    employment: "Volunteer",
+    site: "On-site",
+    isActive: true,
+    description:
+      "Help set up computers, troubleshoot basic hardware and software issues, and support staff at a local non-profit.",
+    companyOverview: "CommunityConnect provides tech resources to underserved neighborhoods.",
+    salary: 0,
+    employer: { id: "106", username: "communityconnect_wa", bio: "Non-profit bridging the digital divide in Tacoma." },
+  },
+];
+
+export const mockUser = {
+  id: "1",
+  username: "student_demo",
+  email: "demo@foliage.app",
+  userType: "JOB_SEEKER",
+  bio: "High school junior interested in tech and design.",
+  firstName: "Alex",
+  lastName: "Rivera",
+  school: "Lincoln High School",
+  grade: "11th",
+  connectedJobs: [mockJobs[0], mockJobs[2]],
+};
+
+export const mockApplications = [
+  {
+    id: "1",
+    applicantName: "Alex Rivera",
+    applicantEmail: "demo@foliage.app",
+    applicantBio: "Passionate about web development and eager to learn.",
+    resume: "https://example.com/resume",
+    jobPost: { id: "1", title: "Junior Web Developer Intern" },
+  },
+  {
+    id: "2",
+    applicantName: "Jordan Lee",
+    applicantEmail: "jordan@example.com",
+    applicantBio: "Interested in data and research. Strong Excel skills.",
+    resume: "",
+    jobPost: { id: "3", title: "Data Entry & Research Assistant" },
+  },
+];
